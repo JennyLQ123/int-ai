@@ -1,0 +1,55 @@
+{
+  "int_receive": {
+    "s0":
+    {
+      "qtimedelta": 1,
+      "depth": 1,
+      "counter": 1
+    },
+    "s1": {
+      "qtimedelta": 2,
+      "depth": 2,
+      "counter": 2
+    },
+    "s2": {
+      "qtimedelta": 2,
+      "depth": 2,
+      "counter": 2
+    },
+    "s3": {
+      "qtimedelta": 2,
+      "depth": 2,
+      "counter": 2
+    },
+    "s4": {
+      "qtimedelta": 2,
+      "depth": 2,
+      "counter": 2
+    },
+    "s5": {
+      "qtimedelta": 2,
+      "depth": 2,
+      "counter": 2
+    },
+    "s6": {
+      "qtimedelta": 2,
+      "depth": 2,
+      "counter": 2
+    },
+    "s7": {
+      "qtimedelta": 2,
+      "depth": 2,
+      "counter": 2
+    },
+    "s8": {
+      "qtimedelta": 2,
+      "depth": 2,
+      "counter": 2
+    },
+    "s9": {
+      "qtimedelta": 2,
+      "depth": 2,
+      "counter": 2
+    }
+  }
+}

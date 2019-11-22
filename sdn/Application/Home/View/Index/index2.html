@@ -1,0 +1,38 @@
+//通过设置setInterval定时拉取消息
+setInterval(function () {
+	//控制循环取数,使随时间移动
+	if(data11.length>10){
+		data11.shift();
+		data12.shift();
+		data13.shift();
+		data14.shift();
+		data15.shift();
+		time1.shift();
+	}
+	var data_arr=[find_max_data(bouncer(data11)),find_max_data(bouncer(data12)),find_max_data(bouncer(data13)),
+		find_max_data(bouncer(data14)),find_max_data(bouncer(data15))];
+	console.log(data_arr);
+	myChart10.setOption({
+	legend:{
+			data:['s1','s3','s4','s5','s9']
+		},
+		xAxis: {
+			 data:time1  //横轴重新设置时间
+			 },
+		yAxis: {
+			type: 'value',
+			max: Math.round(find_max_data(bouncer(data_arr)))+50,// 设定y轴最大值,调整整个图的比例
+		},
+	   series: [{
+			   data:data11  //重新设置值
+		  },{
+			   data:data12
+		  },{
+			   data:data13
+		  },{
+			   data:data14
+		  },{
+			   data:data15
+		  }]
+	   });
+}, 5000);
